@@ -5,18 +5,18 @@ resource "aws_subnet" "elastic-search-va-public-1e" {
   availability_zone="us-east-1e"
    map_public_ip_on_launch=true
   tags = {
-    Name = "public-io-1a"
+    Name = "public-io-1e"
     Env = "test"
   }
 }
 # Create PublicSubnet-b
-resource "aws_subnet" "elastic-search-va-public-1b" {
+resource "aws_subnet" "elastic-search-va-public-1f" {
   vpc_id = aws_vpc.elastic-search-va.id
   cidr_block = "10.1.0.64/26"
   availability_zone="us-east-1f"
    map_public_ip_on_launch=true
   tags = {
-    Name = "public-io-1b"
+    Name = "public-io-1f"
     Env = "test"
   }
 }

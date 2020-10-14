@@ -38,6 +38,6 @@ resource "aws_route_table" "elastic-search-private-io-rtb" {
     route_table_id = aws_route_table.elastic-search-private-io-rtb.id
   }
   resource "aws_route_table_association" "public-io-1f"{
-    subnet_id = aws_subnet.elastic-search-va-public-1b.id
+    subnet_id = aws_subnet.elastic-search-va-public-1f.id
     route_table_id = aws_route_table.elastic-search-private-io-rtb.id
   }
